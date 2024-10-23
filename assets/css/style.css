@@ -8,8 +8,10 @@
 /* ___custom property___ */
 :root{
    --main-color: #0861FF;
+   --main-color-dark: #003eaa;
    --c-black: #000;
    --c-white: #fff;
+   --c-lightgray: #5f5f5f;
 }
 
 /* ___standard css___ */
@@ -20,11 +22,11 @@ body{
 /* ___utility___ */
 .big-container{
    margin: 0 auto;
-   max-width: 1000px;
+   max-width: 1200px;
 }
 .small-container{
    margin: 0 auto;
-   max-width: 800px;
+   max-width: 1000px;
 }
 .btn{
    background-color: var(--main-color);
@@ -32,23 +34,33 @@ body{
    padding: 6px 10px;
    border: none;
 }
+.btn:hover{
+   background-color: var(--main-color-dark)
+}
+.btn-big{
+   padding: 12px 15px;
+}
 .debug{
    border: 1px solid red;
 }
 /* =====header style===== */
+header{
+   transition-duration: .3s;
+}
 /* navbar-section style */
 section.navbar{
    display: flex;
    justify-content: space-between;
    padding: 15px 15px;
 }
-.navbar #logo{
+
+.nav-left, .nav-right{
+   display: flex;
+}
+.nav-left .logo{
    width: 100px;
    height: 20px;
    margin-right: 30px;
-}
-.nav-left, .nav-right{
-   display: flex;
 }
 .nav-left ul, .nav-right ul{
    display: flex;
@@ -69,4 +81,91 @@ section.navbar{
 section.hero{
    background-color: #B4D0E7;
 }
+.hero-container{
+   padding-top: 50px;
+}
+.hero-title{
+   width: 90%;
+   margin-bottom: 35px;
+}
+.hero-title h1{
+   font-size: 4rem;
+   font-weight: 800;
+}
+/* hero content */
+.hero-content{
+   width: 100%;
+   height: 370px;
+   display: flex;
+}
+.content-text{
+   width: 35%;
+   position: relative;
+}
+.content-text p{
+   font-size: 0.9rem;
+}
+.content-text button{
+   margin: 30px 0;
+}
+.content-text span{
+   display: block;
+   font-size: 0.9rem;
+}
+.content-text a.arrow-down{
+   color: var(--c-black);
+   text-decoration: none;
+   position: absolute;
+   bottom: -5px;
+   font-size: 50px;
+   transition: 0.3s ease;
+}
+.content-text a.arrow-down:hover{
+   
+   transform: translateY(-5px);
+}
+.content-image{
+   width: 65%;
+}
+.content-image img{
+   width: 100%;
+}
+
+
+
+
+
+
+/* =====footer style===== */
+footer{
+   margin-top: 300px;   
+   background-color: var(--c-black);
+   color: var(--c-white);
+}
+.footer-content{
+   display: flex;
+   padding: 50px;
+   justify-content: space-between;
+}
+.footer-col span{
+   display: block;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.footer-col ul{
+   list-style: none;
+   padding-bottom: 50px;
+}
+.footer-col ul li{
+   padding-bottom: 10px;
+}
+.footer-col ul li a{
+   font-size: 0.9rem;
+   text-decoration: none;
+   color: var(--c-white);
+}
+
+
+
+
 
