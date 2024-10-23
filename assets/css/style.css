@@ -1,0 +1,72 @@
+/* ___css reset___ */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ___custom property___ */
+:root{
+   --main-color: #0861FF;
+   --c-black: #000;
+   --c-white: #fff;
+}
+
+/* ___standard css___ */
+body{
+   font-family: "Open Sans", sans-serif;
+}
+
+/* ___utility___ */
+.big-container{
+   margin: 0 auto;
+   max-width: 1000px;
+}
+.small-container{
+   margin: 0 auto;
+   max-width: 800px;
+}
+.btn{
+   background-color: var(--main-color);
+   color: var(--c-white);
+   padding: 6px 10px;
+   border: none;
+}
+.debug{
+   border: 1px solid red;
+}
+/* =====header style===== */
+/* navbar-section style */
+section.navbar{
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 15px;
+}
+.navbar #logo{
+   width: 100px;
+   height: 20px;
+   margin-right: 30px;
+}
+.nav-left, .nav-right{
+   display: flex;
+}
+.nav-left ul, .nav-right ul{
+   display: flex;
+}
+.nav-left ul li, .nav-right ul li{
+   list-style: none;
+   margin-right: 30px;
+}
+.nav-left ul li a, .nav-right ul li a{
+   color: var(--c-black);
+   text-decoration: none;
+   font-size: 0.8rem;
+}
+.nav-right ul li:last-child{
+   margin-right: 15px;
+}
+/* hero-section style */
+section.hero{
+   background-color: #B4D0E7;
+}
+
