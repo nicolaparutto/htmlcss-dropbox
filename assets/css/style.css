@@ -21,6 +21,19 @@ html{
 body{
    font-family: "Open Sans", sans-serif;
 }
+h1{
+   font-size: 4rem;
+   font-weight: 800;
+}
+h2{
+   font-size: 2.5rem;
+}
+h3{
+   font-size: 1.2rem;
+}
+p, span{
+   font-size: 0.9rem;
+}
 
 /* ___utility___ */
 .big-container{
@@ -31,6 +44,7 @@ body{
    margin: 0 auto;
    max-width: 1000px;
 }
+
 .btn{
    background-color: var(--main-color);
    color: var(--c-white);
@@ -52,16 +66,13 @@ body{
 .btn-white:hover{
    background-color: #e8e8e8;
 }
-.debug{
-   border: 1px solid red;
-}
+
 /* =====header style===== */
 /* navbar-section style */
 section.navbar{
    display: flex;
    justify-content: space-between;
 }
-
 .nav-left, .nav-right{
    display: flex;
 }
@@ -72,7 +83,6 @@ section.navbar{
 }
 .nav-left ul, .nav-right ul{
    display: flex;
-
 }
 .nav-left ul li, .nav-right ul li{
    list-style: none;
@@ -84,12 +94,13 @@ section.navbar{
 }
 .nav-left ul li a, .nav-right ul li a{
    color: var(--c-black);
-   text-decoration: none;
    font-size: 0.9rem;
+   text-decoration: none;
 }
 .nav-right button{
-   margin: 12px 10px;
+   margin: 16px 10px;
 }
+
 /* hero-section style */
 section.hero{
    background-color: #B4D0E7;
@@ -97,15 +108,11 @@ section.hero{
 .hero-container{
    padding-top: 50px;
 }
+/* hero content style*/
 .hero-title{
    width: 90%;
    margin-bottom: 35px;
 }
-.hero-title h1{
-   font-size: 4rem;
-   font-weight: 800;
-}
-/* hero content style*/
 .hero-content{
    width: 100%;
    height: 370px;
@@ -115,15 +122,11 @@ section.hero{
    width: 35%;
    position: relative;
 }
-.content-text p{
-   font-size: 0.9rem;
-}
 .content-text button{
    margin: 30px 0;
 }
 .content-text span{
    display: block;
-   font-size: 0.9rem;
 }
 .content-text a.arrow-down{
    color: var(--c-black);
@@ -131,6 +134,7 @@ section.hero{
    position: absolute;
    bottom: -5px;
    font-size: 50px;
+   font-weight: bold;
    transition: 0.3s ease;
 }
 .content-text a.arrow-down:hover{
@@ -152,7 +156,6 @@ main{
    margin: 0 20px;
 }
 .section-title h2{
-   font-size: 2.5rem;
    margin-bottom: 50px;
 }
 .section-title label{
@@ -160,8 +163,7 @@ main{
    margin-right: 30px;
    margin-bottom: 40px;
 }
-
-/* pay-slot section style */
+/* payment section style */
 .pay-slot-container{
    display: flex;
 }
@@ -169,7 +171,6 @@ main{
    width: calc(90% / 3);
    border: 1px solid #c5c5c5;
    margin: 20px;
-   font-size: 0.9rem;
 }
 .pay-slot-title{
    text-align: center;
@@ -183,7 +184,6 @@ main{
    padding: 35px;
 }
 .first-content h3{
-   font-size: 1.2rem;
    margin-bottom: 20px;
 }
 .first-content span.price{
@@ -198,20 +198,20 @@ main{
 }
 .first-content ul li{
    margin: 20px 0;
+   list-style: none;
 }
 .pay-slot-content .btn{
    width: 100%;
    margin: 20px 0;
-   padding: 10px 0;
 }
 span.pay-now a{
    color: var(--main-color);
 }
 span.divisor{
-   margin: 40px 0;
-   width: 50px;
    display: block;
+   margin: 40px 0;
    border-bottom: 1px solid #c5c5c5;
+   width: 50px;
 }
 .second-content span{
    display: block;
@@ -220,8 +220,8 @@ span.divisor{
 }
 .second-content ul li{
    margin-bottom: 20px;
+   list-style: none;
 }
-
 /* slot max-width style */
 .pay-slot-maxw-container{
    margin: 0 20px;
@@ -241,16 +241,11 @@ span.divisor{
 }
 .slot-left h3{
    margin-bottom: 15px;
-   font-size: 1.2rem;
 }
 .slot-left span{
    display: block;
    font-weight: bold;
-   font-size: 0.9rem;
    margin-bottom: 40px;
-}
-.slot-left p{
-   font-size: 0.9rem;
 }
 .slot-right button{
    width: 100%;
@@ -275,11 +270,9 @@ section.banner-section{
    padding: 40px;
 }
 .banner-text h3{
-   font-size: 1.2rem;
    margin-bottom: 10px;
 }
 .banner-text p{
-   font-size: 0.9rem;
    margin-bottom: 25px;
 }
 
@@ -288,8 +281,8 @@ section.card-section{
    margin-top: 120px;
 }
 .card-container{
-   margin: 0 20px;
    display: flex;
+   margin: 0 20px;
    justify-content: space-between;
    flex-wrap: wrap;
 }
@@ -307,11 +300,7 @@ section.card-section{
    height: 50%;
 }
 .card-text h3{
-   font-size: 1.2rem;
    margin-bottom: 30px;
-}
-.card-text p{
-   font-size: 0.9rem;
 }
 
 /* end-page section style */
@@ -328,23 +317,19 @@ section.end-page{
    color: var(--main-color);
 }
 
-
-
-
-
 /* =====footer style===== */
 footer{
    margin-top: 150px;
    background-color: var(--c-black);
    color: var(--c-white);
 }
+/* footer content style */
 .footer-content{
    display: flex;
    padding: 50px 0;
    justify-content: space-between;
 }
-.footer-col span{
-   display: block;
+.footer-col h3{
    font-weight: bold;
    margin-bottom: 10px;
 }
@@ -368,8 +353,8 @@ footer{
    border-bottom: 1px solid #fff;
    width: 80px;
 }
-
-.language{
+/* language selector */
+div.language{
    padding: 70px 0;
 }
 .language i{
@@ -380,6 +365,7 @@ footer{
    color: #747474;
    border: none;
    cursor: pointer;
+   font-size: 1rem;
 }
 
 
