@@ -33,12 +33,21 @@ body{
    color: var(--c-white);
    padding: 6px 10px;
    border: none;
+   cursor: pointer;
 }
 .btn:hover{
    background-color: var(--main-color-dark)
 }
 .btn-big{
    padding: 12px 15px;
+}
+.btn-white{
+   background-color: var(--c-white);
+   color: var(--c-black);
+   border: 1px solid #000;
+}
+.btn-white:hover{
+   background-color: #e8e8e8;
 }
 .debug{
    border: 1px solid red;
@@ -51,7 +60,6 @@ header{
 section.navbar{
    display: flex;
    justify-content: space-between;
-   padding: 15px 15px;
 }
 
 .nav-left, .nav-right{
@@ -60,22 +68,27 @@ section.navbar{
 .nav-left .logo{
    width: 100px;
    height: 20px;
-   margin-right: 30px;
+   margin: 20px;
 }
 .nav-left ul, .nav-right ul{
    display: flex;
+   
 }
 .nav-left ul li, .nav-right ul li{
    list-style: none;
-   margin-right: 30px;
+   padding: 20px;
+   cursor: pointer;
+}
+.nav-left ul li:hover, .nav-right ul li:hover{
+   border-bottom: 2px solid var(--c-black);
 }
 .nav-left ul li a, .nav-right ul li a{
    color: var(--c-black);
    text-decoration: none;
-   font-size: 0.8rem;
+   font-size: 0.9rem;
 }
-.nav-right ul li:last-child{
-   margin-right: 15px;
+.nav-right button{
+   margin: 12px 10px;
 }
 /* hero-section style */
 section.hero{
@@ -92,7 +105,7 @@ section.hero{
    font-size: 4rem;
    font-weight: 800;
 }
-/* hero content */
+/* hero content style*/
 .hero-content{
    width: 100%;
    height: 370px;
@@ -130,6 +143,166 @@ section.hero{
 .content-image img{
    width: 100%;
 }
+
+/* =====main style===== */
+main{
+   margin-top: 150px;
+}
+/* title section style*/
+.section-title{
+   margin: 0 20px;
+}
+.section-title h2{
+   font-size: 2.5rem;
+   margin-bottom: 50px;
+}
+.section-title label{
+   display: inline-block;
+   margin-right: 30px;
+   margin-bottom: 40px;
+}
+
+/* pay-slot section style */
+.pay-slot-container{
+   display: flex;
+}
+.pay-slot{
+   width: calc(90% / 3);
+   border: 1px solid #c5c5c5;
+   margin: 20px;
+   font-size: 0.9rem;
+}
+.pay-slot-title{
+   text-align: center;
+   border-bottom: 1px solid #c5c5c5;
+   padding: 10px 0;
+}
+.pay-slot-title span i{
+   margin-right: 5px;
+}
+.pay-slot-content{
+   padding: 35px;
+}
+.first-content h3{
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+.first-content span.price{
+   display: block;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+.first-content span.duration{
+   display: block;
+   color: var(--c-lightgray);
+   margin-bottom: 40px;
+}
+.first-content ul li{
+   margin: 20px 0;
+}
+.pay-slot-content .btn{
+   width: 100%;
+   margin: 20px 0;
+   padding: 10px 0;
+}
+span.pay-now a{
+   color: var(--main-color);
+}
+span.divisor{
+   margin: 40px 0;
+   width: 50px;
+   display: block;
+   border-bottom: 1px solid #c5c5c5;
+}
+.second-content span{
+   display: block;
+   font-weight: bold;
+   margin-bottom: 30px;
+}
+.second-content ul li{
+   margin-bottom: 20px;
+}
+
+/* slot max-width style */
+.pay-slot-maxw-container{
+   margin: 0 20px;
+   border: 1px solid #c5c5c5;
+}
+.pay-slot-maxw-content{
+   display: flex;
+   padding: 35px;
+   justify-content: space-between;
+}
+.slot-left{
+   max-width: 70%;
+   margin-right: 65px;
+}
+.slot-right{
+   width: 30%;
+}
+.slot-left h3{
+   margin-bottom: 15px;
+   font-size: 1.2rem;
+}
+.slot-left span{
+   display: block;
+   font-weight: bold;
+   font-size: 0.9rem;
+   margin-bottom: 40px;
+}
+.slot-left p{
+   font-size: 0.9rem;
+}
+.slot-right button{
+   width: 100%;
+}
+
+/* banner section style */
+section.banner-section{
+   margin-top: 120px;
+}
+.banner{
+   display: flex;
+   margin: 0 20px;
+}
+.banner-image{
+   width: 60%;
+}
+.banner-image img{
+   width: 100%;
+}
+.banner-text{
+   width: 40%;
+   padding: 40px;
+}
+.banner-text h3{
+   font-size: 1.2rem;
+   margin-bottom: 10px;
+}
+.banner-text p{
+   font-size: 0.9rem;
+   margin-bottom: 25px;
+}
+
+/* card section style */
+section.card-section{
+   margin-top: 120px;
+}
+.card-container{
+   margin: 20px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.card{
+   width: calc(90% / 3);
+}
+.card-image{
+   height: 45%;
+}
+.card-image img{
+   width: 100%;
+}
+
 
 
 
