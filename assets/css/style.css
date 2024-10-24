@@ -15,6 +15,9 @@
 }
 
 /* ___standard css___ */
+html{
+   scroll-behavior: smooth;
+}
 body{
    font-family: "Open Sans", sans-serif;
 }
@@ -53,9 +56,6 @@ body{
    border: 1px solid red;
 }
 /* =====header style===== */
-header{
-   transition-duration: .3s;
-}
 /* navbar-section style */
 section.navbar{
    display: flex;
@@ -72,7 +72,7 @@ section.navbar{
 }
 .nav-left ul, .nav-right ul{
    display: flex;
-   
+
 }
 .nav-left ul li, .nav-right ul li{
    list-style: none;
@@ -134,7 +134,6 @@ section.hero{
    transition: 0.3s ease;
 }
 .content-text a.arrow-down:hover{
-   
    transform: translateY(-5px);
 }
 .content-image{
@@ -289,21 +288,45 @@ section.card-section{
    margin-top: 120px;
 }
 .card-container{
-   margin: 20px;
+   margin: 0 20px;
    display: flex;
+   justify-content: space-between;
    flex-wrap: wrap;
 }
 .card{
    width: calc(90% / 3);
+   height: 480px;
 }
 .card-image{
-   height: 45%;
+  height: 50%;
 }
 .card-image img{
    width: 100%;
 }
+.card-text{
+   height: 50%;
+}
+.card-text h3{
+   font-size: 1.2rem;
+   margin-bottom: 30px;
+}
+.card-text p{
+   font-size: 0.9rem;
+}
 
-
+/* end-page section style */
+section.end-page{
+   margin-top: 150px;
+}
+.final-title{
+   width: 70%;
+}
+.final-title h2{
+   margin-bottom: 60px;
+}
+.final-title a{
+   color: var(--main-color);
+}
 
 
 
@@ -311,13 +334,13 @@ section.card-section{
 
 /* =====footer style===== */
 footer{
-   margin-top: 300px;   
+   margin-top: 150px;
    background-color: var(--c-black);
    color: var(--c-white);
 }
 .footer-content{
    display: flex;
-   padding: 50px;
+   padding: 50px 0;
    justify-content: space-between;
 }
 .footer-col span{
@@ -336,6 +359,27 @@ footer{
    font-size: 0.9rem;
    text-decoration: none;
    color: var(--c-white);
+}
+.footer-col ul li a:hover{
+   text-decoration: underline;
+}
+.footer-divisor{
+   display: block;
+   border-bottom: 1px solid #fff;
+   width: 80px;
+}
+
+.language{
+   padding: 70px 0;
+}
+.language i{
+   color: #747474;
+}
+.language select{
+   background-color: #000;
+   color: #747474;
+   border: none;
+   cursor: pointer;
 }
 
 
